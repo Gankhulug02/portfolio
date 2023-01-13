@@ -7,6 +7,7 @@
   background-color: transparent;
   height: 4rem;
   color: white;
+  animation: slide-down 0.7s;
 }
 .navLeft {
   display: flex;
@@ -21,19 +22,17 @@
   font-size: 18px;
   color: white;
 }
-.button {
+
+.active button {
   position: relative;
   text-transform: capitalize;
   color: white;
   font-weight: bold;
   font-size: 18px;
 }
-.button:hover {
+.active button:hover {
   border-bottom: 2px solid blue;
 }
-.button:focus {
+.activebutton:focus {
   border-bottom: 2px solid blue;
 }
-/* .menu :hover {
-  border-bottom: 2px solid blue;
-} */

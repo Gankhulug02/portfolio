@@ -1,20 +1,36 @@
 .container {
-  background-color: rgb(124, 255, 141);
+  background-color: rgb(34, 37, 41);
+  padding-top: 5%;
   position: relative;
   display: flex;
   height: 100vh;
   font-size: 200px;
   /* align-items: center; */
   justify-content: center;
+}
+.top {
+  position: relative;
+  width: 100%;
   h1 {
-    font-size: 100px;
+    // color: rgb(34, 37, 41);
+    color: rgb(41, 45, 49);
+    font-size: calc(1rem + 7.4vw);
     position: absolute;
+    z-index: 1;
     left: 50%;
     transform: translate(-50%);
   }
-  video {
+  p {
     position: absolute;
-    width: 100%;
-    z-index: -1;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 2;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    span {
+      padding: 0.3rem;
+      border-bottom: 2px solid #007fff;
+    }
   }
 }

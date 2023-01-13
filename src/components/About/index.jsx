@@ -12,7 +12,12 @@ const About = () => {
         playsInline
         src="https://www.vecteezy.com/video/7622658-abstract-multicolored-glowing-festive-background"
       ></video> */}
-      <h1>ABOUT ME</h1>
+      <div className={style.top}>
+        <h1>ABOUT ME</h1>
+        <p>
+          Know <span>Me</span> More
+        </p>
+      </div>
       <Arrow />
     </div>
   );
