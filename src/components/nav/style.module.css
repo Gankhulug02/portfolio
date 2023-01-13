@@ -1,0 +1,39 @@
+.container {
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  /* margin: 0 auto; */
+  margin: 0px 10% 0px 10%;
+  background-color: transparent;
+  height: 4rem;
+  color: white;
+}
+.navLeft {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+}
+.navRight {
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.button {
+  position: relative;
+  text-transform: capitalize;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.button:hover {
+  border-bottom: 2px solid blue;
+}
+.button:focus {
+  border-bottom: 2px solid blue;
+}
+/* .menu :hover {
+  border-bottom: 2px solid blue;
+} */

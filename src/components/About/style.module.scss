@@ -1,0 +1,20 @@
+.container {
+  background-color: rgb(124, 255, 141);
+  position: relative;
+  display: flex;
+  height: 100vh;
+  font-size: 200px;
+  /* align-items: center; */
+  justify-content: center;
+  h1 {
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
