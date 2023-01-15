@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./style.module.scss";
 import Arrow from "../arrow/arrow-bottom";
+import Middle from "./middle";
+import Bottom from "./bottom";
 
 const About = () => {
   return (
@@ -18,6 +20,8 @@ const About = () => {
           Know <span>Me</span> More
         </p>
       </div>
+      <Middle />
+      <Bottom />
       <Arrow />
     </div>
   );

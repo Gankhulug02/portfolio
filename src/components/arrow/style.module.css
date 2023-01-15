@@ -7,19 +7,19 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .arrow {
-    animation: Arrow-move infinite 3s ease-in-out;
+    animation: Arrow-move infinite 3s;
     /* width: 500px;
     height: 500px; */
   }
 }
 @keyframes Arrow-move {
   from {
-    bottom: 75px;
+    bottom: 10%;
     /* transform: translateY(0); */
     color: white;
   }
   to {
-    bottom: 60px;
+    bottom: 5%;
     color: transparent;
   }
 }

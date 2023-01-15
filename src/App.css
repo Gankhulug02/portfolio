@@ -5,7 +5,9 @@
   padding: 0px;
   list-style: none;
   font-family: "Sofia Sans", sans-serif;
+  text-decoration: none;
 }
+
 .body p {
   margin: 0px;
   padding: 0px;

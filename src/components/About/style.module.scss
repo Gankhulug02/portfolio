@@ -1,31 +1,32 @@
 .container {
   background-color: rgb(34, 37, 41);
-  padding-top: 5%;
   position: relative;
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  font-size: 200px;
-  /* align-items: center; */
   justify-content: center;
 }
 .top {
-  position: relative;
+  position: absolute;
+  top: 20px;
   width: 100%;
   h1 {
     // color: rgb(34, 37, 41);
     color: rgb(41, 45, 49);
     font-size: calc(1rem + 7.4vw);
+    // font-size: 7.4vw;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     left: 50%;
     transform: translate(-50%);
   }
   p {
     position: absolute;
     color: white;
-    font-size: 2.5rem;
-    z-index: 2;
-    top: 20px;
+    font-size: 3vw;
+    z-index: 1;
+    line-height: 3;
+    // top: 30px;
     left: 50%;
     transform: translate(-50%);
     span {
