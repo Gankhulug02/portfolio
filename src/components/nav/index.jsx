@@ -22,7 +22,7 @@ const Navbar = () => {
 
     let nav = document.querySelector("nav");
 
-    if (Math.floor(scrolled) >= 1000) {
+    if (Math.floor(scrolled) >= 300) {
       nav.classList.remove("container");
       nav.classList.add("asd");
       console.log("asd");
@@ -52,7 +52,7 @@ const Navbar = () => {
             {menu.map((i) => (
               // <Nav.Link className={style.active} href={`/${i.href}`}>
               <Link className={style.active} to={`/${i.href}`}>
-                <button>{i.name}</button>
+                <button>.( {i.name} )</button>
               </Link>
               // </Nav.Link>
             ))}

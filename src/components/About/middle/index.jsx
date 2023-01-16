@@ -2,11 +2,27 @@ import React from "react";
 import style from "./styles.module.scss";
 
 const Middle = () => {
+  const play = () => {
+    const video = document.querySelector("#video");
+    if (video.classList.contains("videoDisplay") === true) {
+      console.log("true");
+      video.classList.remove("videoDisplay");
+      video.classList.add("video");
+    } else {
+      video.classList.add("videoDisplay");
+      video.classList.remove("video");
+      console.log("false");
+    }
+  };
   return (
     <div className={style.container}>
       <div className={style.left}>
         <h2>
-          I`m <span className="text-primary">Gankhulug</span>, a Web Developer
+          I`m{" "}
+          <button className="text-primary" onClick={play}>
+            Gankhulug
+          </button>
+          , a Web Developer
         </h2>
         <p>
           I help you build brand for your business at an affordable price.

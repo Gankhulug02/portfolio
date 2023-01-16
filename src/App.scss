@@ -35,18 +35,23 @@ button {
   background-color: transparent;
 }
 .asd {
+  position: -webkit-sticky !important;
   position: sticky !important;
-  width: 100%;
-  z-index: 1;
-  top: 0px;
-  /* margin-top: -4rem; */
-  /* margin: 0px 10% 0px 10%; */
-  padding: 0px 15% 0px 15%;
-  /* background-color: white; */
-  height: 4rem;
-  color: white;
-  animation: slide-down 0.7s;
-  button {
-    color: black !important;
-  }
+  top: 0 !important;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+  margin-top: 1000px;
+}
+.video {
+  display: none;
+}
+.videoDisplay {
+  opacity: 1 !important;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: aliceblue;
+  width: fit-content;
+  height: 50%;
 }
