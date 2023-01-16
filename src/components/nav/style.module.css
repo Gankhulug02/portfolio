@@ -1,10 +1,12 @@
 .container {
-  position: sticky;
-  z-index: 2;
+  /* position: sticky; */
+  width: 100%;
+  z-index: 1;
   top: 0px;
-  /* margin: 0 auto; */
-  margin: 0px 10% 0px 10%;
-  background-color: transparent;
+  /* margin-top: -4rem; */
+  /* margin: 0px 10% 0px 10%; */
+  padding: 0px 15% 0px 15%;
+  /* background-color: white; */
   height: 4rem;
   color: white;
   animation: slide-down 0.7s;

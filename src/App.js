@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./App.scss";
 import Nav from "./components/nav/index";
 import Hero from "./components/Hero/index";
 import About from "./components/About/index";
@@ -11,6 +11,7 @@ import Contact from "./components/Contact/index";
 import { SocialIcon } from "react-social-icons";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -20,10 +21,16 @@ function App() {
       <About />
       <Skill />
       <Education />
-      <Work />
-      <Experience />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Education" element={<Education />} />
+        <Route path="/Work" element={<Work />} />
+        <Route path="/Experience" element={<Experience />} />
+        <Route path="/" element={<Hero />} />
+      </Routes>
+
       <Contact />
-      {/* <About /> */}
     </div>
   );
 }
