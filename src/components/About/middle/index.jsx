@@ -22,7 +22,7 @@ const Middle = () => {
         </p>
       </div>
       <motion.div
-        initial={{ x: 600 }}
+        initial={{ x: 1000 }}
         animate={{ x: 0 }}
         transition={{ duration: 2, delay: 45 }}
         className="w-100"
