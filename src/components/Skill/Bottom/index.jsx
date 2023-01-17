@@ -39,7 +39,10 @@ const Bottom = () => {
   return (
     <div className={style.container}>
       {skill.map((i) => (
-        <img src={i.img} alt={i.language} />
+        <div className={style.item}>
+          <img src={i.img} alt={i.language} />
+          {/* <p>{i.language}</p> */}
+        </div>
       ))}
     </div>
   );
