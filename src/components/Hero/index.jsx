@@ -5,37 +5,41 @@ import { motion, MotionConfig } from "framer-motion";
 import Particles from "react-particles";
 import ParticlesConfig from "../particle/particles-config";
 import Arrow from "../arrow/arrow-bottom";
+import Skills from "../Skill";
 
 const Hero = () => {
   return (
-    <div id="home" className={style.container}>
-      <ParticlesConfig></ParticlesConfig>
-      <div className={style.left}>
-        <div className="d-flex flex-wrap fs-7">
-          <h1>I enjoy&nbsp;</h1>
-          <h1 className="text-primary">
-            <Typewriter
-              loop={Infinity}
-              cursor
-              cursorStyle="|"
-              typeSpeed={85}
-              deleteSpeed={100}
-              delaySpeed={1500}
-              words={["designing", "tech", "websites", "digital products"]}
-            />
-          </h1>
+    <>
+      <div id="home" className={style.container}>
+        <ParticlesConfig></ParticlesConfig>
+        <div className={style.left}>
+          <div className="d-flex flex-wrap fs-7">
+            <h1>I enjoy&nbsp;</h1>
+            <h1 className="text-primary">
+              <Typewriter
+                loop={Infinity}
+                cursor
+                cursorStyle="|"
+                typeSpeed={85}
+                deleteSpeed={100}
+                delaySpeed={1500}
+                words={["designing", "tech", "websites", "digital products"]}
+              />
+            </h1>
+          </div>
+          <p>
+            8+ years of experience in Webflow development. My mission is to
+            design and develop a website that you and your audience love.
+          </p>
+          <button>Get in touch</button>
         </div>
-        <p>
-          8+ years of experience in Webflow development. My mission is to design
-          and develop a website that you and your audience love.
-        </p>
-        <button>Get in touch</button>
+        <div className={style.right}>
+          <img src="./images/zurag.png" alt="" />
+        </div>
+        <Arrow />
       </div>
-      <div className={style.right}>
-        <img src="./images/zurag.png" alt="" />
-      </div>
-      <Arrow />
-    </div>
+      <Skills />
+    </>
   );
 };
 

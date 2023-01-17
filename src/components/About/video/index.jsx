@@ -4,13 +4,12 @@ import style from "./style.module.css";
 const Video = () => {
   return (
     <div>
-      {" "}
       <iframe
         id="video"
-        className="video"
+        className={style.video}
         // width="420"
         // height="315"
-        src="./images/me.mp4"
+        src="./images/video.mp4"
       ></iframe>
     </div>
   );

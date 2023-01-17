@@ -17,10 +17,10 @@ function App() {
   return (
     <div className="App body container">
       <Nav />
-      <Hero />
+      {/* <Hero />
       <About />
       <Skill />
-      <Education />
+      <Education /> */}
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/About" element={<About />} />

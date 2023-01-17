@@ -1,28 +1,13 @@
 import React from "react";
 import style from "./styles.module.scss";
+import { motion } from "framer-motion";
 
 const Middle = () => {
-  const play = () => {
-    const video = document.querySelector("#video");
-    if (video.classList.contains("videoDisplay") === true) {
-      console.log("true");
-      video.classList.remove("videoDisplay");
-      video.classList.add("video");
-    } else {
-      video.classList.add("videoDisplay");
-      video.classList.remove("video");
-      console.log("false");
-    }
-  };
   return (
     <div className={style.container}>
       <div className={style.left}>
         <h2>
-          I`m{" "}
-          <button className="text-primary" onClick={play}>
-            Gankhulug
-          </button>
-          , a Web Developer
+          I`m<span className="text-primary">Gankhulug </span> , a Web Developer
         </h2>
         <p>
           I help you build brand for your business at an affordable price.
@@ -36,17 +21,24 @@ const Middle = () => {
           dummy text ever when an unknown printer took a galley.
         </p>
       </div>
-      <div className={style.right}>
-        <h5>Name: &nbsp;Urtnasan Gankhulug</h5>
-        <h5>
-          Email: &nbsp;
-          <a href="mailto:huluguu0202@gmail.com" target="blank">
-            Huluguu0202@gmail.com
-          </a>
-        </h5>
-        <h5>Age: &nbsp;19</h5>
-        <h5>From: &nbsp;Ulaanbaater Mongolia</h5>
-      </div>
+      <motion.div
+        initial={{ x: 600 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 2, delay: 45 }}
+        className="w-100"
+      >
+        <div className={style.right}>
+          <h5>Name: &nbsp;Urtnasan Gankhulug</h5>
+          <h5>
+            Email: &nbsp;
+            <a href="mailto:huluguu0202@gmail.com" target="blank">
+              Huluguu0202@gmail.com
+            </a>
+          </h5>
+          <h5>Age: &nbsp;19</h5>
+          <h5>From: &nbsp;Ulaanbaater Mongolia</h5>
+        </div>
+      </motion.div>
     </div>
   );
 };
