@@ -21,11 +21,14 @@
   padding: 20px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.485);
-  // flex: 1;
-  // min-width: 100px;
-  // width: 300px;
+  transition: 0.3s ease-in-out;
+
   img {
     height: auto;
     width: 80%;
+  }
+  &:hover {
+    scale: 1.1;
+    rotate: 5deg;
   }
 }

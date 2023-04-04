@@ -7,7 +7,7 @@ const Middle = () => {
     <div className={style.container}>
       <div className={style.left}>
         <h2>
-          I`m<span className="text-primary">Gankhulug </span> , a Web Developer
+          I`m <span className="text-primary">Gankhulug </span> , a Web Developer
         </h2>
         <p>
           I help you build brand for your business at an affordable price.

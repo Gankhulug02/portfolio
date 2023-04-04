@@ -51,8 +51,8 @@ const Navbar = () => {
         <div className={style.navRight}>
           {menu.map((i) => (
             // <Nav.Link className={style.active} href={`/${i.href}`}>
-            <Link className={style.active} to={`/${i.href}`}>
-              <button>.{i.name}( )</button>
+            <Link className={style.active} to={`#${i.href}`}>
+              <button>.{i.name}</button>
             </Link>
             // </Nav.Link>
           ))}

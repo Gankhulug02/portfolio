@@ -8,6 +8,7 @@ import Education from "./components/Education/index";
 import Work from "./components/Work/index";
 import Experience from "./components/Experience/index";
 import Contact from "./components/Contact/index";
+import Home from "./pages/home";
 import { SocialIcon } from "react-social-icons";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
@@ -16,18 +17,13 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App body container">
-      <Nav />
+      {/* <Nav /> */}
       {/* <Hero />
       <About />
       <Skill />
       <Education /> */}
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Education" element={<Education />} />
-        <Route path="/Work" element={<Work />} />
-        <Route path="/Experience" element={<Experience />} />
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
       </Routes>
 
       <Contact />

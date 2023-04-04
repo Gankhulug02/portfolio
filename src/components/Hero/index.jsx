@@ -5,7 +5,6 @@ import { motion, MotionConfig } from "framer-motion";
 import Particles from "react-particles";
 import ParticlesConfig from "../particle/particles-config";
 import Arrow from "../arrow/arrow-bottom";
-import Skills from "../Skill";
 
 const Hero = () => {
   return (
@@ -38,7 +37,6 @@ const Hero = () => {
         </div>
         <Arrow />
       </div>
-      <Skills />
     </>
   );
 };
